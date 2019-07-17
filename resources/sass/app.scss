@@ -1,0 +1,498 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+@font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(./material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+   src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(./material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
+        url(./material-design-icons/MaterialIcons-Regular.woff) format('woff'),
+        url(./material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+$mdc-theme-primary: #0092AD;
+$mdc-theme-secondary: #FCD82C;
+$mdc-theme-on-primary: #FFFFFF;
+$mdc-theme-on-secondary: #FFFFFF;
+$mdc-theme-grey :  #656668;
+
+$grid-breakpoints: (
+xs: 0,
+sm: 600px,
+md: 900px,
+lg: 1000px,
+xl: 1280px
+);
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+@font-face {
+    font-family: AvenirNextCondensed-Regular;
+    src: url('/fonts/AvenirNextCondensed-Regular.ttf');
+}
+
+
+@import "../../node_modules/@material/button/mdc-button";
+@import "../../node_modules/@material/textfield/mdc-text-field";
+@import "../../node_modules/@material/form-field/mdc-form-field";
+@import "../../node_modules/@material/checkbox/mdc-checkbox";
+@import "../../node_modules/@material/shape/mixins";
+@import "../../node_modules/@material/shape/functions";
+@import "../../node_modules/@material/typography/mdc-typography";
+@import "../../node_modules/@material/elevation/mdc-elevation";
+@import "../../node_modules/@material/slider/mdc-slider";
+@import "../../node_modules/@material/list/mdc-list";
+@import "../../node_modules/@material/snackbar/mdc-snackbar";
+@import "../../node_modules/@material/dialog/mdc-dialog";
+@import "../../node_modules/@material/fab/mdc-fab";
+@import "../../node_modules/@material/icon-button/mdc-icon-button";
+@import "../../node_modules/@material/tab/mdc-tab";
+@import "../../node_modules/@material/tab-bar/mdc-tab-bar";
+@import "../../node_modules/@material/tab-scroller/mdc-tab-scroller";
+@import "../../node_modules/@material/tab-indicator/mdc-tab-indicator";
+@import "../../node_modules/@material/chips/mdc-chips";
+@import '../../node_modules/aos/dist/aos.css';
+@import "../../node_modules/@material/select/mdc-select";
+
+@import "../../node_modules/@material/menu-surface/mdc-menu-surface";
+@import "../../node_modules/@material/menu/mdc-menu";
+@import "../../node_modules/@material/card/mdc-card";
+
+
+.my-custom-chips-w{
+
+  @include mdc-chip-fill-color(#ffffff);
+}
+.my-custom-chips-gray{
+
+  @include mdc-chip-fill-color(#F1F3F4);
+}
+.my-custom-chips-gray2{
+
+  @include mdc-chip-fill-color(#656668);
+}
+.my-custom-chips-bl{
+
+  @include mdc-chip-fill-color(#FF1744);
+}
+.my-custom-chips-b{
+
+  @include mdc-chip-fill-color($mdc-theme-primary);
+}
+.my-custom-chips-y{
+
+  @include mdc-chip-fill-color($mdc-theme-secondary);
+}
+.my-custom-chips-g{
+
+  @include mdc-chip-fill-color(#4BC0C0);
+}
+.my-custom-button {
+  @include mdc-button-shape-radius(50%);
+}
+.my-custom-tab {
+  @include mdc-tab-ink-color(black);
+}
+
+.my-custom-textField {
+  @include mdc-text-field-outline-shape-radius(50%, false)
+}
+.white-textField {
+  @include mdc-text-field-focused-outline-color(white);
+  @include mdc-text-field-hover-outline-color(white);
+  @include mdc-text-field-outline-color(white);
+  @include mdc-text-field-label-color(white);
+  @include mdc-text-field-caret-color(white);
+  @include mdc-text-field-ink-color(white);
+}
+.white-textArea{
+  @include mdc-text-field-textarea-fill-color(white);
+}
+.secondary-button {
+  @include mdc-button-filled-accessible($mdc-theme-secondary);
+  @include mdc-button-outline-color($mdc-theme-secondary);
+
+}
+.secondary-fab {
+
+  @include mdc-fab-ink-color(black);
+
+}
+
+.home-card{
+  transition: all .15s;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.home-card:hover{
+
+
+  transition: all .15s;
+  -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.app-fab--absolute {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media(min-width: 1024px) {
+  .app-fab--absolute {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+.primary-slider{
+  @include mdc-slider-color-accessible($mdc-theme-primary);
+}
+@mixin outline($value) {
+  outline: $value;
+}
+.primary{
+  color: $mdc-theme-primary!important;
+}
+.secondary{
+  color: $mdc-theme-secondary!important;
+}
+.bg-secondary{
+  background-color: $mdc-theme-secondary !important;
+}
+.bg-primary{
+  background-color: $mdc-theme-primary !important;
+}
+button {
+  @include outline(0);
+}
+#logo{
+  transition: 1s;
+}
+button,
+button:active,
+button:focus,
+button:hover,
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover{
+  outline:none !important;
+}
+.bg-second{
+  background-color:$mdc-theme-secondary;
+
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+.form-control:focus {
+
+  outline: 0;
+  -webkit-box-shadow:none;
+  box-shadow: none;
+}
+.text-grey{
+  color:#68696B;
+}
+.menu__minilogo{
+  top: 5px ;
+  margin-left:50px;
+  opacity: 0;
+  position: absolute;
+
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.menu__minilogo.active {
+  width: 55px;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+
+.menu__biglogo{
+  width: 110px;
+
+
+  opacity: 0;
+
+
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.menu__biglogo.active {
+  width: 125px;
+
+
+  opacity: 1;
+  transform: scale(1);
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.my-card{
+  height:688px;
+  border-radius: 6px;
+}
+
+.my-card-home{
+  border: 3px $mdc-theme-primary solid;
+  border-radius: 6px;
+}
+.my-img{
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.my-hr{
+  border:2px solid black;
+  border-radius:10px;
+}
+// nav{
+//   color:white;
+//   min-height: 100px;
+//   transition: all .15s ease 0s;
+//
+// }
+// .my-nav{
+//
+//   min-height: 70px;
+//
+//   transition:all .15s ease 0s;
+//
+// }
+// .nav-link{
+//   color:white;
+// }
+
+.page-header {
+  background-color: $mdc-theme-primary;
+  background-image: none ;
+}
+@media (min-width: 830px){
+
+  .about-card{
+    width: 1038px;
+    height: 1000px;
+  }
+  .page-header {
+
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+  }
+
+}
+// @media (max-width: 830px){
+//   nav{
+//     background-color:white;
+//     color:$mdc-theme-grey;
+//
+//   }
+//   nav a{
+//
+//     color: black!important;
+//   }
+// }
+.my-padding{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about-card{
+  width: 1038px;
+  height: 442px;
+}
+
+
+.my-info--hidden{
+  display:none;
+}
+.icon-home{
+  background-color: $mdc-theme-secondary;
+  border-radius: 100%;
+}
+.talents-section{
+
+
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.my-select{
+  @include mdc-select-outline-shape-radius(100%, false);
+}
+.my-fab{
+  @include mdc-fab-container-color($mdc-theme-primary);
+}
+a:hover{
+  transition: .15s;
+  color:$mdc-theme-primary;
+}
+a{
+  transition: .15s;
+}
+
+.white-hr{
+  border:1px solid white;
+}
+
+.my-font{
+  font-family: AvenirNextCondensed-Regular !important;
+}
+.shade{
+    box-shadow:0 4px 8px rgba(0,0,0,.1);
+}
+
+//FOOTER
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:70px;
+  height:70px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+
+
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:1;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+.my-card-content {
+  padding: 16px;
+}
+.my-card {
+  height: 350px;
+  width: 350px;
+}
