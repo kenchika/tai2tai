@@ -116,7 +116,7 @@
 
 						<div class="col-md-6 mb-3  text-md-right text-sm-center " >
 							<div class="mdc-text-field mdc-text-field--outlined  ">
-								<input type="text" class="mdc-text-field__input form-control " name="wechatid" required>
+								<input type="text" class="mdc-text-field__input form-control " name="wechatid" >
 								<div class="mdc-notched-outline">
 									<div class="mdc-notched-outline__leading"></div>
 									<div class="mdc-notched-outline__notch">

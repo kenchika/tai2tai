@@ -4,30 +4,30 @@
 
 
 <div class="container-fluid   page-header"style="background-image:url('../img/talentsPage.jpg');" >
-<div class="container  text-white ">
-	<div class="row justify-content-end py-5"  >
+	<div class="container  text-white ">
+		<div class="row justify-content-end py-5"  >
 
-		<div class="row py-md-5 py-sm-1">
-			<div class="col-md-5 col-sm-12"></div>
-			<div class="col-md-7 col-sm-12 my-5 py-md-5 py-sm-1  " >
-
-
+			<div class="row py-md-5 py-sm-1">
+				<div class="col-md-5 col-sm-12"></div>
+				<div class="col-md-7 col-sm-12 my-5 py-md-5 py-sm-1  " >
 
 
 
 
 
-				<h1 class="mdc-typography--headline2 text-left pt-5 font-weight-bold ">{{ __('talentsMessages.title') }} </h1>
-<hr class="white-hr">
-				<p class="mdc-typography--body1 text-justify text-left pb-3">{{ __('talentsMessages.intro') }}</p>
+
+
+					<h1 class="mdc-typography--headline2 text-left pt-5 font-weight-bold ">{{ __('talentsMessages.title') }} </h1>
+					<hr class="white-hr">
+					<p class="mdc-typography--body1 text-justify text-left pb-3">{{ __('talentsMessages.intro') }}</p>
 
 
 
 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 
@@ -40,7 +40,7 @@
 
 
 
-	
+
 	<div class="container text-dark ">
 		<div class="row "  >
 			<div class="p-lg-4 mx-auto mt-5">
@@ -126,9 +126,7 @@
 				<div class="position-relative overflow-hidden text-center ">
 					<div class=" mx-auto ">
 						<a class="" href="/visaSimulator" >
-							<i class="material-icons">
-	question_answer
-	</i>
+							<img src="{{URL::asset('img/faq.png')}}" width="80" />
 						</a>
 						<p class="mdc-typography--body1 text-justify text-center my-4">{{ __('TalentsMessages.faq') }}
 						</p>
@@ -144,9 +142,7 @@
 				<div class="position-relative overflow-hidden text-center ">
 
 					<a class="" href="/simulator" >
-						<i class="material-icons">
-	question_answer
-	</i>
+						<img src="{{URL::asset('img/mail.png')}}"  class="pt-4" width="100" />
 					</a>
 					<p class="mdc-typography--body1 text-justify text-center my-4">{{ __('talentsMessages.text2') }}
 					</p>

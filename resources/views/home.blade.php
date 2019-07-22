@@ -1,8 +1,6 @@
-
 @extends('layouts.app')
 @include('cookieConsent::index')
 @section('content')
-
 <div class="container-fluid   page-header " style="background-image:url({{ __('homeMessages.background')}});" >
 	<div class="container text-white ">
 		<div class="row justify-content-end py-5"  >
@@ -316,5 +314,4 @@
 
 	</div>
 </main>
-
 @endsection

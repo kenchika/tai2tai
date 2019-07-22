@@ -449,10 +449,8 @@
 
 			<div class="position-relative overflow-hidden text-center ">
 				<div class=" mx-auto ">
-					<a class="" href="/visaSimulator" >
-						<i class="material-icons">
-							question_answer
-						</i>
+					<a class="" href="/faq" >
+						<img src="{{URL::asset('img/faq.png')}}" width="80" />
 					</a>
 					<p class="mdc-typography--body1 text-justify text-center my-4">{{ __('TalentsMessages.faq') }}
 					</p>

@@ -1,7 +1,9 @@
 <?php
 
 return [
-	'intro' => 'Tai2Tai’s mission is to support your company’s growth by providing you the most suitable talent. Whether you need a consultant for a specific project like creating your brand strategy or for a long-term mission like management and maintenance of your website, we have the right talent for you! All our consultants live and are legally employed in China.
+	'intro' => 'You are living in China? You are ready to take up your career’s next step? You want to join a dynamic community? Tai2Tai is the right place for you to work.
+Don’t wait! In just few minutes, you will know whether or not your profile is eligible to a Working Permit in China
+
 
 ',
 	'title' => 'Join our talent team',
@@ -9,7 +11,7 @@ return [
 	'btn1' => 'Am I eligible ?',
 	'btn2' => 'How much will I make ?',
 	'text1' => 'Don’t wait! In just few minutes, you will know whether or not your profile is eligible to a Working Permit in China',
-	'text2' => 'In just few clicks, you can find out how much you will be your take-home wage and better understand how to be profitable',
+	'text2' => 'In just few clicks, you can find out if you are eligible to a Working permit with Tai2Tai',
 	'title2' => 'Not convinced yet ? ',
 	'subtitle2' => 'Here are 5 (good) reasons why should you join tai2tai',
 	'blue1' => 'You find a legal and hassle-free option to put your skills to work in exciting ways when joining us',

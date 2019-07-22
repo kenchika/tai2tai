@@ -253,7 +253,7 @@ return [
     'paginate' => [
         'num_of_results' => 10,
     ],
-    
+
     /*
     |--------------------------------------------------------------------------
     | Show missing fields to users in forms
@@ -282,27 +282,27 @@ return [
 
     'middleware' => [
         'global'     => ['web'],
-        'home'       => [],
+        'home'       => ['auth'],
         'discussion' => [
-            'index'   => [],
-            'show'    => [],
-            'create'  => [],
-            'store'   => [],
-            'destroy' => [],
-            'edit'    => [],
-            'update'  => [],
+            'index'   => ['auth'],
+            'show'    => ['auth'],
+            'create'  => ['auth'],
+            'store'   => ['auth'],
+            'edit'    => ['auth'],
+            'destroy' => ['auth'],
+            'update'  => ['auth'],
         ],
         'post' => [
-            'index'   => [],
-            'show'    => [],
-            'create'  => [],
-            'store'   => [],
-            'destroy' => [],
-            'edit'    => [],
-            'update'  => [],
+            'index'   => ['auth'],
+            'show'    => ['auth'],
+            'create'  => ['auth'],
+            'store'   => ['auth'],
+            'destroy' => ['auth'],
+            'edit'    => ['auth'],
+            'update'  => ['auth'],
         ],
         'category' => [
-            'show' => [],
+            'show' => ['auth'],
         ],
     ],
 ];

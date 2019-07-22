@@ -14,6 +14,7 @@
 
 
 <script src="{{ asset('js/app.js') }}" defer></script>
+<link rel="shortcut icon" type="image/png" href="{{URL::asset('img/logoSimple.png')}}"/>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -498,7 +499,10 @@
 
 						<a class="nav-item nav-link mdc-typography--button {{ Request::is('getInTouch') ? 'active font-weight-bold' : '' }}" href="{{ url('/getInTouch') }}">Get in touch</a>
 						<a class="nav-item nav-link mdc-typography--button {{ Request::is('news') ? 'active font-weight-bold' : '' }}" href="{{ url('/news') }}">News</a>
+							@guest
+							@else
 						<a class="nav-item nav-link mdc-typography--button {{ Request::is('forums') ? 'active font-weight-bold' : '' }}" href="/forums">Forum</a>
+						@endguest
 					</ul>
 
 					<!-- Right Side Of Navbar -->
@@ -630,15 +634,8 @@
 	<footer>
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-sm-4 col-md-3 item">
-					<h3>Services</h3>
-					<ul>
-						<li><a href="#">Web design</a></li>
-						<li><a href="#">Development</a></li>
-						<li><a href="#">Hosting</a></li>
-					</ul>
-				</div>
-				<div class="col-sm-4 col-md-3 item">
+
+				<div class="col-sm-6 col-md-3 item">
 					<h3>About</h3>
 					<ul>
 						<li><a href="{{ url('/faq') }}">faq</a></li>
@@ -646,7 +643,7 @@
 						<li><a data-toggle="modal" data-target="#termsConditions">Terms and Conditions</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-4 col-md-3 item">
+				<div class="col-sm-6 col-md-3 item">
 					<h3>Careers</h3>
 					<ul>
 						<li><a href="#">Job openings</a></li>
@@ -654,7 +651,7 @@
 						<li><a href="#">Benefits</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 item social"><a href="#"><img  src="{{URL::asset('img/linkedin.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/wechat.png')}}" class="img-fluid"/></a><a href="#"><img  src="{{URL::asset('img/facebook.png')}}" class="img-fluid"/></a>
+				<div class="col-lg-5 item social"><a href="#"><img  src="{{URL::asset('img/examail.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/linkedin.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/wechat.png')}}" class="img-fluid"/></a><a href="#"><img  src="{{URL::asset('img/facebook.png')}}" class="img-fluid"/></a>
 					<p class="copyright">Tai2Tai
 © 2019</p>
 				</div>
