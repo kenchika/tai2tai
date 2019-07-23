@@ -2,8 +2,22 @@
 
 @section('content')
 
+<style>
+@media (min-width: 830px){
+	.page-header {
 
-<div class="container-fluid page-header" style="background-image:url('../img/aboutUs.jpg');" >
+		height: 100vh;
+		background-position: center center;
+		background-size: cover;
+		background-image: url("{{URL::asset('img/aboutUs.jpg')}}");
+		display: flex;
+		align-items: center;
+
+	}
+
+}
+</style>
+<div class="container-fluid page-header"  >
 
 	<div class="container pt-5">
 
@@ -38,8 +52,9 @@
 			</div>
 		</div>
 		<div class="row">
+
 			<div class="col-md-6 col-sm-12">
-				<img src="{{URL::asset('img/homePage2.jpg')}}" class="img-fluid my-img " />
+				<img src="{{URL::asset('img/greg.jpg')}}"  class="img-fluid my-img " />
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<p class="text-left  mdc-typography--headline5  font-weight-bold primary">
@@ -125,7 +140,7 @@
 				</p>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<img src="{{URL::asset('img/homePage2.jpg')}}" class="img-fluid my-img " />
+				<img src="{{URL::asset('img/alexia.jpg')}}" class="img-fluid my-img " />
 			</div>
 		</div>
 		<div class="row pt-5">

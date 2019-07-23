@@ -87,7 +87,7 @@
 							<input type="hidden" name="id" value="{{$contract->id}}">
 							<button  class="text-decoration-none text-dark" >
 								<li class="mdc-list-item" role="menuitem">
-									<span class="mr-2">		<i class="material-icons mdc-button__icon">file_copy</i></span>
+									<span class="mr-2">		<i class="material-icons mdc-button__icon">insert_drive_file</i></span>
 									New&nbsp;invoice
 								</li>
 							</button>
@@ -171,7 +171,7 @@ Delete
 					<a class="mdc-list-item" class="mdc-list-item " href="{{ route('invoice.pdf',[ 'user'=> Auth::id(), 'contract_id'=> $contract->id, '$invoice_id'=> $invoice->id ]) }}" >	<span class="mr-2">	<i class="material-icons mdc-button__icon">insert_drive_file</i></span>PDF</a>
 					@endif
 
-					<a class="mdc-list-item" href="#">	<span class="mr-2">		<i class="material-icons mdc-button__icon">close</i></span>Delete</a>
+					<a class="mdc-list-item" href="{{ route('invoice.destroy') }}">	<span class="mr-2">		<i class="material-icons mdc-button__icon">close</i></span>Delete</a>
 					<a class="mdc-list-item" href="{{ route('invoice.showInvoice',[ 'user'=> Auth::id(), 'contract_id'=> $contract->id, '$invoice_id'=> $invoice->id ]) }}">	<span class="mr-2">		<i class="material-icons mdc-button__icon">edit</i></span>
 						Edit</a>
 					</div>

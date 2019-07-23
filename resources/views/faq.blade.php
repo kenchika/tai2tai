@@ -2,8 +2,23 @@
 <script src="{{ asset('js/visaSimulator.js') }}" defer></script>
 @section('content')
 
+<style>
+@media (min-width: 830px){
+	.page-header {
 
-<div class="container-fluid page-header" style="background-image:url('../img/faq.jpg');" >
+		height: 100vh;
+		background-position: center center;
+		background-size: cover;
+		background-image: url("{{URL::asset('img/faq.jpg')}}");
+		display: flex;
+		align-items: center;
+
+	}
+
+}
+</style>
+
+<div class="container-fluid page-header"  >
 
 	<div class="container pt-5">
 
