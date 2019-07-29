@@ -141,7 +141,7 @@ function calcTTC(){
     var config = {
       type: 'pie',
       data: {
-        labels: ['Other', 'Yearly wage','Net','Allowances',['Tai2 commission','tax']],
+
         datasets: [{
           data:tab2,
           backgroundColor: [
@@ -152,7 +152,8 @@ function calcTTC(){
 
 
           ],
-          label: 'Dataset 1'
+          labels: ['Other', 'Yearly wage'],
+
         },
         {
 
@@ -169,21 +170,27 @@ function calcTTC(){
 
 
           ],
+          labels: ['Tai2 commission','tax','Net','Allowances'],
 
 
         }]
 
       },
       options: {
-        responsive: false,
-        tooltips: {
-           enabled: true,
-      },
-      legend: {
-            display: false,
-
-        }
-    }
+       responsive: false,
+       legend: {
+           display: false,
+       },
+       tooltips: {
+           callbacks: {
+               label: function(tooltipItem, data) {
+                   var dataset = data.datasets[tooltipItem.datasetIndex];
+                   var index = tooltipItem.index;
+                   return dataset.labels[index] + ': ' + dataset.data[index];
+               }
+           }
+       }
+   }
   };
     myDoughnutChart = new Chart(ctx, config);
 
