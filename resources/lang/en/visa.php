@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'title'=> 'try our working permit eligibility simulator
+	'title'=> 'Try our working permit eligibility simulator
 ',
 'intro'=> 'Eligibility to a Chinese work permit is calculated with a points system, you must reach a minimum a points to obtain the Holy gral! This calculation system is official and not just for Shanghai or Tai2Tai. Give it a try, it only takes few minutes to find out.
 

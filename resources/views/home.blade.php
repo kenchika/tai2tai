@@ -81,13 +81,16 @@
 	<div class="container-fluid  "style="background: rgb(21,144,169);
 	background: linear-gradient(90deg, rgba(21,144,169,1) 0%, rgba(255,255,255,1) 50%, rgba(252,216,44,1) 100%);" >
 	<div class="container ">
-		<div class="row justify-content-center align-items-center "  >
-			<div class="col-md-4 col-sm-12 my-5 " >
+		<div class="row justify-content-center align-items-center"  >
+			<a href="{{ url('/talents') }}" class="col-md-4 col-sm-12 my-5 text-decoration-none text-dark">
+
 
 				<div class="position-relative overflow-hidden text-center  ">
 					<div class=" mx-auto ">
 						<div class="col-12 my-4">
 							<img src="{{URL::asset('img/iconTalent.png')}}" width=200 />
+							<hr class="my-hr mx-5">
+								<hr class="my-hr ">
 						</div>
 						<h1 class="mdc-typography--headline5 font-weight-bold" >{{ __('homeMessages.talent') }}</h1>
 						<p class="mdc-typography--body1 text-justify text-center ">{{ __('homeMessages.talentText') }}
@@ -98,33 +101,32 @@
 					<div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
 				</div>
 
-			</div>
+
+		</a>
 			<div class="col-md-4 col-sm-12 ">
 
 				<div class="position-relative overflow-hidden text-center text-dark" >
 
-					<div class="row">
-						<div class="col">
-							<hr class="my-hr">
-						</div>
-						<div class="col-6">
+					<div class="row justify-content-center">
+
+						<div class="col-8">
 							<p class="mdc-typography--headline4 text-justify text-center font-weight-bold " >{{ __('homeMessages.uare') }}</p>
 						</div>
-						<div class="col">
-							<hr class="my-hr">
-						</div>
+
 					</div>
 
 
 				</div>
 
 			</div>
-			<div class="col-md-4 col-sm-12 my-5">
+				<a href="{{ url('/clients') }}" class="col-md-4 col-sm-12 my-5 text-decoration-none text-dark">
 
 				<div class="position-relative overflow-hidden text-center ">
 
 					<div class="col-12 my-4">
 						<img src="{{URL::asset('img/iconClient.png')}}" width=200 class="icon_Home"/>
+						<hr class="my-hr mx-5">
+							<hr class="my-hr ">
 					</div>
 					<h1 class="mdc-typography--headline5 font-weight-bold">{{ __('homeMessages.client') }}</h1>
 					<p class="mdc-typography--body1 text-justify text-center">{{ __('homeMessages.clientText') }}
@@ -133,7 +135,7 @@
 				</div>
 
 
-			</div>
+			</a>
 		</div>
 	</div>
 </div>
@@ -150,7 +152,7 @@
 			<div class="position-relative overflow-hidden text-center ">
 
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon1.png')}}" width="200" class=" icon-home  " />
+					<img src="{{URL::asset('img/icon1.png')}}" width="175" class=" icon-home  " />
 				</div>
 <div class="px-5">
 				<h1 class="mdc-typography--headline5 font-weight-bold">{{ __('homeMessages.convenienceTitle') }}</h1>
@@ -167,7 +169,7 @@
 			<div class="position-relative overflow-hidden text-center ">
 
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon2.png')}}" width="200" class=" icon-home  "  />
+					<img src="{{URL::asset('img/icon2.png')}}" width="175" class=" icon-home  "  />
 				</div>
 				<div class="px-5">
 					<h1 class="mdc-typography--headline5 font-weight-bold">{{ __('homeMessages.complianceTitle') }}</h1>
@@ -185,7 +187,7 @@
 			<div class="position-relative overflow-hidden text-center">
 
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon3.png')}}" width="200" class=" icon-home  " />
+					<img src="{{URL::asset('img/icon3.png')}}" width="175" class=" icon-home  " />
 				</div>
 				<div class="px-5">
 					<h1 class="mdc-typography--headline5 font-weight-bold">{{ __('homeMessages.peaceOfMindTitle') }}</h1>
@@ -208,7 +210,7 @@
 
 
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon4.png')}}" width="200" class=" icon-home  "/>
+					<img src="{{URL::asset('img/icon4.png')}}" width="175" class=" icon-home  "/>
 
 
 				</div>
@@ -228,7 +230,7 @@
 
 
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon5.png')}}" width="200" class=" icon-home  "/>
+					<img src="{{URL::asset('img/icon5.png')}}" width="175" class=" icon-home  "/>
 
 
 				</div>
@@ -244,7 +246,7 @@
 
 			<div class="position-relative overflow-hidden text-center">
 				<div class="col my-4" align="center">
-					<img src="{{URL::asset('img/icon6.png')}}" width="200" class=" icon-home  "/>
+					<img src="{{URL::asset('img/icon6.png')}}" width="175" class=" icon-home  "/>
 				</div>
 					<div class="px-5">
 				<h1 class="mdc-typography--headline5 font-weight-bold">{{ __('homeMessages.empowermentTitle') }}</h1>

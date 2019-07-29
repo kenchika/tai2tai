@@ -16,7 +16,7 @@ Don’t wait! In just few minutes, you will know whether or not your profile is 
 	'subtitle2' => 'Here are 5 (good) reasons why should you join tai2tai',
 	'blue1' => 'You find a legal and hassle-free option to put your skills to work in exciting ways when joining us',
 	'black1' => 'Unless you prefer to go for the tedious option of starting your own WOFE (Wholly Owned Foreign Entreprise).',
-	'blue2' => 'You are the one who decides which project to take on and and when.',
+	'blue2' => 'You are the one who decides which project to take on and when.',
 	'black2' => ' Tai2Tai allows you to find the perfect balance with your other demanding jobs, being a partner, a parent, a friend, an athlete, an explorer, etc. ',
 	'blue3' => 'You are unique consultant but you join a community',
 	'black3' => 'Working indepently can be a struggle, especially in China. With Tai2Tai you join a team where you can learn, grow and get all kinds support you may need.',

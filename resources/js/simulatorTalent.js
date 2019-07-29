@@ -141,7 +141,7 @@ function calcTTC(){
     var config = {
       type: 'pie',
       data: {
-
+        labels: ['Other', 'Yearly wage','Net','Allowances',['Tai2 commission','tax']],
         datasets: [{
           data:tab2,
           backgroundColor: [
@@ -155,6 +155,7 @@ function calcTTC(){
           label: 'Dataset 1'
         },
         {
+
           data:tab,
           backgroundColor: [
 
@@ -168,15 +169,20 @@ function calcTTC(){
 
 
           ],
-          label: 'Dataset 1'
+
+
         }]
 
       },
       options: {
         responsive: false,
         tooltips: {
-           enabled: false,
-      }
+           enabled: true,
+      },
+      legend: {
+            display: false,
+
+        }
     }
   };
     myDoughnutChart = new Chart(ctx, config);

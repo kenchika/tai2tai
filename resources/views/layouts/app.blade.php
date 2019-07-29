@@ -534,20 +534,13 @@
 								</button>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="text-decoration-none" href="{{ route('logout') }}"
-								onclick="event.preventDefault();
-								document.getElementById('logout-form').submit();">
-								<li class="mdc-list-item" role="menuitem" >
-									<span class="mdc-list-item__text text-dark  mdc-typography--button" >	{{ __('Logout') }}</span>
-								</li>
-							</a>
 
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 								@csrf
 							</form>
 							<a href="{{ url('/simulator') }} " class="text-decoration-none">
 								<li class="mdc-list-item" role="menuitem" >
-									<span class="mdc-list-item__text text-dark  mdc-typography--button" >Simulator</span>
+									<span class="mdc-list-item__text text-dark  mdc-typography--button" >Wage simulator</span>
 								</li>
 							</a>
 
@@ -557,6 +550,13 @@
 									<span class="mdc-list-item__text text-dark  mdc-typography--button">dashboard </span>
 								</li>
 							</a>
+							<a class="text-decoration-none" href="{{ route('logout') }}"
+							onclick="event.preventDefault();
+							document.getElementById('logout-form').submit();">
+							<li class="mdc-list-item" role="menuitem" >
+								<span class="mdc-list-item__text text-dark  mdc-typography--button" >	{{ __('Logout') }}</span>
+							</li>
+						</a>
 						</div>
 					</div>
 					@endguest
@@ -638,20 +638,20 @@
 				<div class="col-sm-6 col-md-3 item">
 					<h3>About</h3>
 					<ul>
-						<li><a href="{{ url('/faq') }}">faq</a></li>
+						<li><a href="{{ url('/faq') }}">FAQ</a></li>
 						<li><a data-toggle="modal" data-target="#privacyPolicyModal">Privacy Policy</a></li>
 						<li><a data-toggle="modal" data-target="#termsConditions">Terms and Conditions</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-6 col-md-3 item">
+				<!-- <div class="col-sm-6 col-md-3 item">
 					<h3>Careers</h3>
 					<ul>
 						<li><a href="#">Job openings</a></li>
 						<li><a href="#">Employee success</a></li>
 						<li><a href="#">Benefits</a></li>
 					</ul>
-				</div>
-				<div class="col-lg-5 item social"><a href="#"><img  src="{{URL::asset('img/examail.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/linkedin.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/wechat.png')}}" class="img-fluid"/></a><a href="#"><img  src="{{URL::asset('img/facebook.png')}}" class="img-fluid"/></a>
+				</div> -->
+				<div class="col-lg-5 item social"><a href="mailto:contact@tai2tai.com"><img  src="{{URL::asset('img/examail.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/linkedin.png')}}" class="img-fluid"/></i></a><a href="#"><img  src="{{URL::asset('img/wechat.png')}}" class="img-fluid"/></a><a href="#"><img  src="{{URL::asset('img/facebook.png')}}" class="img-fluid"/></a>
 					<p class="copyright">Tai2Tai
 © 2019</p>
 				</div>

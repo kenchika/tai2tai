@@ -7,7 +7,7 @@ return [
 	',
 	'title' => 'The people behind tai2tai
 	',
-	'text1' => 'Our team through proust’s eyes
+	'text1' => 'Our team through Proust’s eyes
 	',
 	'text2' => 'Grégoire GIROUX  - Co-Founder ',
 
@@ -21,7 +21,7 @@ return [
 	'text6' => '4. What is the trait you most deplore in others? ',
 	'response4' => 'I am really uncomfortable with people who don’t keep their promises and are willing to lie to cover it up. ',
 	'text7' => '5. What do you consider your greatest achievement? ',
-	'response5' => 'My sense of humor! Depending on my mood of the day, it can be terribly bad.',
+	'response5' => 'Marrying my wife is my greatest achievement, we were friends for quite some years and she eventually realized I was the perfect man for her',
 	'text8' => '6. Which living person do you most admire? ',
 	'response6' => 'My wife!',
 	'text9' => ' 7. How would you like to die?',

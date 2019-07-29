@@ -54,7 +54,70 @@
 		<div class="row">
 
 			<div class="col-md-6 col-sm-12">
-				<img src="{{URL::asset('img/greg.jpg')}}"  class="img-fluid my-img " />
+				<p class="text-right  mdc-typography--headline5  font-weight-bold primary">
+					{{ __('aboutUsMessages.text11') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text3') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response9') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text4') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response10') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text5') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response11') }}
+				</p>
+			</div>
+			<div class="col-md-6 col-sm-12 text-center pb-3">
+				<img src="{{URL::asset('img/alexia.jpg')}}" width="350" class=" " />
+			</div>
+		</div>
+		<div class="row pt-5">
+			<div class="col-12">
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text6') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response12') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text7') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response13') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text8') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response14') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text9') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response15') }}
+				</p>
+				<p class="text-right mdc-typography--button font-weight-bold primary">
+					{{ __('aboutUsMessages.text10') }}
+				</p>
+				<p class="text-right  mdc-typography--body2 ">
+					{{ __('aboutUsMessages.response16') }}
+				</p>
+			</div>
+
+		<div class="row pt-5">
+
+			<div class="col-md-6 col-sm-12 text-center pb-3">
+				<img src="{{URL::asset('img/greg.jpg')}}" width="350" class=" " />
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<p class="text-left  mdc-typography--headline5  font-weight-bold primary">
@@ -114,68 +177,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="row pt-5">
 
-			<div class="col-md-6 col-sm-12">
-				<p class="text-right  mdc-typography--headline5  font-weight-bold primary">
-					{{ __('aboutUsMessages.text11') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text3') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response9') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text4') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response10') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text5') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response11') }}
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<img src="{{URL::asset('img/alexia.jpg')}}" class="img-fluid my-img " />
-			</div>
-		</div>
-		<div class="row pt-5">
-			<div class="col-12">
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text6') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response12') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text7') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response13') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text8') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response14') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text9') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response15') }}
-				</p>
-				<p class="text-right mdc-typography--button font-weight-bold primary">
-					{{ __('aboutUsMessages.text10') }}
-				</p>
-				<p class="text-right  mdc-typography--body2 ">
-					{{ __('aboutUsMessages.response16') }}
-				</p>
-			</div>
 		</div>
 	</div>
 

@@ -718,17 +718,17 @@
 													</div>
 													<div class="mdc-notched-outline__trailing"></div>
 												</div>
-												<input type="hidden" name="type" value="package">
+												<input type="hidden" name="type" value="daily rate">
 												<i class="mdc-select__dropdown-icon"></i>
 												<div class="mdc-select__selected-text" >Package</div>
 												<div class="mdc-select__menu mdc-menu mdc-menu-surface " style="z-index:10000" >
 													<ul class="mdc-list">
 
-														<li class="mdc-list-item" data-value="package" >
-															Package
+														<li class="mdc-list-item" data-value="daily rate" >
+															daily rate
 														</li>
-														<li class="mdc-list-item" data-value="perTime">
-															per Time
+														<li class="mdc-list-item" data-value="hourly rate">
+															hourly rate
 														</li>
 
 													</ul>
@@ -819,7 +819,7 @@
 								</div>
 								<div class="col-6 my-2" align=left>
 									<button type=submit class="shadow-none mdc-button mdc-button--unelevated  mdc-button--outlined my-custom-button"  id="validate" >
-										<span class="mdc-button__label ">add</span>
+										<span class="mdc-button__label ">save</span>
 									</button>
 
 								</div>
@@ -884,10 +884,10 @@
 					<div class="modal-body" >
 						<div class="container" >
 							<div class="row justfy-content-center" >
-								<div class="col-12" align=left>
+								<div class="col-12 text-center text-md-left">
 
 
-									<form action="{{ route('profile.edit')}}" method="post" name="wechat">
+									<form action="{{ route('profile.edit')}}" method="post" name="wechat" class="">
 										@csrf
 										@method('PUT')
 
@@ -905,8 +905,13 @@
 											</div>
 										</div>
 
-
+										<button type=submit class="shadow-none mdc-button mdc-button--unelevated  mdc-button--outlined my-custom-button ml-0 ml-md-5 mt-2 mt-md-0 "  >
+											<span class="mdc-button__label ">save</span>
+										</button>
 									</form>
+
+
+
 
 
 
@@ -918,7 +923,7 @@
 							<form action="{{ route('profile.edit')}}" method="post" class="row ">
 								@csrf
 								@method('PUT')
-								<div class="col-md-6 col-sm-12 pt-3" align="left">
+								<div class="col-md-12 col-sm-12 pt-3" align="left">
 									<div class="mdc-select mdc-select--outlined " id=phone >
 										<div class="mdc-notched-outline">
 											<div class="mdc-notched-outline__leading"></div>
@@ -936,13 +941,7 @@
 
 
 									</div>
-								</div>
-								<div class="col-md-6 col-sm-12 pt-3" align=left>
-
-
-
-
-									<div class="mdc-text-field mdc-text-field--outlined  mdc-text-field--with-trailing-icon">
+									<div class="mdc-text-field mdc-text-field--outlined  mdc-text-field--with-trailing-icon mt-2">
 										<input type="number"  name="number" class="mdc-text-field__input" autocomplete="off" required>
 										<button class="material-icons mdc-text-field__icon"  tabindex="0"  type="submit" >edit</button>
 										<div class="mdc-notched-outline">
@@ -953,8 +952,9 @@
 											<div class="mdc-notched-outline__trailing"></div>
 										</div>
 									</div>
-
-
+									<button type=submit class="shadow-none mdc-button mdc-button--unelevated  mdc-button--outlined my-custom-button ml-0 ml-md-5 mt-2 mt-md-0 "  >
+										<span class="mdc-button__label ">save</span>
+									</button>
 
 
 
@@ -1079,7 +1079,7 @@ $(document).ready(function () {
 		// after click is done, search results segment is made empty
 
 		$('#contact_list').html("");
-		$('#contactIdInput').html('	<input name="contactId" id=contactId type="hidden" value="'+value.split(' ')[4]+'" >');
+		$('#contactIdInput').html('	<input name="contactId" id=contactId type="hidden" value="'+value.split(' ')[3]+'" >');
 
 	});
 });

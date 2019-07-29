@@ -125,7 +125,7 @@
 
 				<div class="position-relative overflow-hidden text-center ">
 					<div class=" mx-auto ">
-						<a class="" href="/visaSimulator" >
+						<a class="" href="/faq" >
 							<img src="{{URL::asset('img/faq.png')}}" width="80" />
 						</a>
 						<p class="mdc-typography--body1 text-justify text-center my-4">{{ __('TalentsMessages.faq') }}
@@ -141,7 +141,7 @@
 
 				<div class="position-relative overflow-hidden text-center ">
 
-					<a class="" href="/simulator" >
+					<a class="" href="/visaSimulator" >
 						<img src="{{URL::asset('img/mail.png')}}"  class="pt-4" width="100" />
 					</a>
 					<p class="mdc-typography--body1 text-justify text-center my-4">{{ __('talentsMessages.text2') }}

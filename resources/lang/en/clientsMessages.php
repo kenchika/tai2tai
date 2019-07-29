@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'intro' => 'Tai2Tai’s mission is to support your company’s growth by providing you the most suitable talent. Whether you need a consultant for a specific project like creating your brand identity or for a long-term mission like  regulat admin work, we have the right talent for you! All our consultants live and are legally employed in China.',
+	'intro' => 'Tai2Tai’s mission is to support your company’s growth by providing you the most suitable talent. Whether you need a consultant for a specific project like creating your brand identity or for a long-term mission like  regular admin work, we have the right talent for you! All our consultants live and are legally employed in China.',
 	'title' => 'Find our best talents',
 	'tell' => 'Tell us more about your need ',
 	'subtitle1' => 'In order to find the most relevant talent for your project, please, kindly fill in this form. Most of the fields are not mandatory but they will help us better understand your needs. We will get back to you within 48 hours.',

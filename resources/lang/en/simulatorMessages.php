@@ -1,9 +1,9 @@
 <?php
 
 return [
-	'intro' => 'Tai2Tai’s mission is to support your company’s growth by providing you the most suitable talent. Whether you need a consultant for a specific project like creating your brand identity or for a long-term mission like  regulat admin work, we have the right talent for you! All our consultants live and are legally employed in China.
+	'intro' => 'Estimating your cash in the pocket can be tricky, especially with the new individual income tax calculation. This is why, we have come up with a simple calculator, it gives you a better understanding of how much you will have available for spending and saving. Give it a try!
 ',
-	'title' => 'Try our simulators for eligibility & take-home wage
+	'title' => 'Try our annual take-home wage simulator
 ',
 	'simulate' => 'Start ! ',
 	'perDay' => '¥ per day',
@@ -16,7 +16,7 @@ return [
 	'gross' => 'Gross salary',
 	'year' => 'Smoothed over 12 months',
 	'net' => 'Net',
-	'Cash' => 'Cash in the pocket',
+	'Cash' => 'Yearly wage',
 	'results' => 'Results',
 	'tax' => 'Tax'
 
